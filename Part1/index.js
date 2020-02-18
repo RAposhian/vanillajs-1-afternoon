@@ -1,4 +1,4 @@
-const board = [];
+let board = [];
 
 const play = (clickedId) => {
    const playerSpan = document.getElementById('player');
@@ -125,4 +125,11 @@ const play = (clickedId) => {
       return;
    }
    
+}   
+const resetBoard =() => {
+   for (let i = 0; i < board.length; i++) {
+      document.getElementById(i).innerText = '';
+   }
+   board = [];
+            
 }
